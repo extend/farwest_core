@@ -8,9 +8,9 @@ ERLC_OPTS ?= -Werror +debug_info +warn_export_all +warn_export_vars \
 # Dependencies.
 
 DEPS = cowboy lager jsx dh_date mimetypes riakc
-dep_cowboy = https://github.com/extend/cowboy master
+dep_cowboy = pkg://cowboy master
 dep_lager = https://github.com/essen/lager update-rebar
-dep_jsx = https://github.com/talentdeficit/jsx master
+dep_jsx = pkg://jsx master
 dep_dh_date = https://github.com/essen/dh_date patch-1
 dep_mimetypes = https://github.com/essen/mimetypes patch-1
 dep_riakc = https://github.com/essen/riak-erlang-client farwest
