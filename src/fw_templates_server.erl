@@ -1,4 +1,5 @@
 -module(fw_templates_server).
+-behaviour(gen_server).
 
 %% API.
 -export([start_link/0]).
